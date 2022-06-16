@@ -1,4 +1,3 @@
-const insValue = document.getElementById('ins-value').value
 const convertBtn = document.getElementById('convert-btn')
 const conversionList = document.getElementById("conversion-list")
 const magnitudes = {
@@ -17,13 +16,17 @@ const magnitudes = {
         mgtsec: "pounds",
         ratio: 2.204
     }
-} 
+}
 
 
-const magnCount = Object.keys(magnitudes)
-const magnTypes = Object.values(magnitudes)
+convertBtn.addEventListener("click", function(){
+    convert()
+})
 
 function convert(){
+    const insValue = document.getElementById('ins-value').value
+    const magnCount = Object.keys(magnitudes)
+    const magnTypes = Object.values(magnitudes)
     let results1 = []
     let results2 = []
     let magnList = []
@@ -43,15 +46,3 @@ function convert(){
     }
     conversionList.innerHTML = magnList
 }
-
-
-
-
-
-
-
-/*
-1 meter = 3.281 feet
-1 liter = 0.264 gallon
-1 kilogram = 2.204 pound
-*/
