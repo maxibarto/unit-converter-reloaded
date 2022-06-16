@@ -88,9 +88,11 @@ h1{
     color: #5A537B;
     font-size: 20px;
     font-weight: 600;
+    margin: 0;
 }
 
 #conversion-box ul li p{
     font-size: 14px;
     color: #353535;
+    margin-bottom: 0;
 }
