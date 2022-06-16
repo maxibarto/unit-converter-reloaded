@@ -19,6 +19,11 @@ const magnitudes = {
     }
 }
 
+convertBtn.addEventListener("click", function(){
+    capitalizeMagnitudes()
+    convert()
+})
+
 function capitalizeMagnitudes(){
     let namesArr = Object.keys(magnitudes)
     for(let i = 0; i < namesArr.length; i++){
@@ -27,11 +32,6 @@ function capitalizeMagnitudes(){
     }
 }   
 
-
-convertBtn.addEventListener("click", function(){
-    capitalizeMagnitudes()
-    convert()
-})
 
 function convert(){
     const insValue = document.getElementById('ins-value').value
