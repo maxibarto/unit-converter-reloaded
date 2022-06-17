@@ -13,6 +13,7 @@ ul{
 h1{
     font-size: 28px;
     margin-bottom: 30px;
+    margin-top: 0;
 }
 
 #main-container{
@@ -95,4 +96,4 @@ h1{
     font-size: 14px;
     color: #353535;
     margin-bottom: 0;
-}
+}   
