@@ -79,10 +79,15 @@ h1{
 }
 
 #conversion-box ul li{
+    margin-bottom: 20px;
     padding: 30px 0;
     background-color: #fff;
     border-radius: 5px;
     text-align: center;
+}
+
+#conversion-box ul li:last-child{
+    margin-bottom: 0;
 }
 
 #conversion-box ul li h3{

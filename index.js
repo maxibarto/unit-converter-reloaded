@@ -39,11 +39,11 @@ function convert(){
     const magnTypes = Object.values(magnitudes)
     let results1 = []
     let results2 = []
-    let magnList = []
+    let magnList = ""
     for (let i = 0; i < magnCount.length; i++){
         results1[i] = (insValue * magnTypes[i].ratio).toFixed(3)
         results2[i] = (insValue / magnTypes[i].ratio).toFixed(3)
-        magnList[i] = `
+        magnList += `
         <li>
             <h3>${namesMgn[i]} (${magnTypes[i].mgtbase} / ${magnTypes[i].mgtsec})</h3>
             <p>
